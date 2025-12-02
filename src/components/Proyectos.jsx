@@ -9,20 +9,20 @@ export default function Proyectos() {
       link: "/case-sabores",
     },
     {
-      title: "Dashboard Financiero",
-      desc: "Dashboard para métricas financieras, seguimiento de KPIs, reportes y análisis administrativo.",
+      title: "Página web Ticteams ",
+      desc: "Diseño UX/UI para plataforma web de gestión de equipos deportivos y torneos.",
       image:
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600",
-      tag: "Analytics · Dashboard",
-      link: "/case-finanzas",
+        "ticteams/ZenBook Duo 14.png",
+      tag: "Web · Technology",
+      link: "/case-ticteams",
     },
     {
-      title: "App Móvil Coopeve",
-      desc: "Rediseño UX/UI centrado en accesibilidad, claridad y experiencia moderna en banca móvil.",
+      title: "App Móvil",
+      desc: "Rediseño UX/UI centrado en accesibilidad, claridad y experiencia de usuario.",
       image:
         "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1600",
-      tag: "Fintech · Mobile App",
-      link: "/case-coopeve",
+      tag: "Shop · Mobile App",
+      link: "/case-",
     },
   ];
 
@@ -49,7 +49,7 @@ export default function Proyectos() {
               className="group rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-xl border border-gray-200 transition-all duration-300"
             >
               {/* Imagen */}
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative  h-56 overflow-hidden">
                 <img
                   src={p.image}
                   className="

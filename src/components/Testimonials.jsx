@@ -3,14 +3,14 @@ import { FiStar } from "react-icons/fi";
 export default function Testimonials() {
   const testimonials = [
     {
-      logo: "/logos/unibank.png",
-      name: "Unibank",
-      role: "Gerencia de Innovación",
+      logo: "/logos-removebg-preview.png",
+      name: "Ticteams",
+      role: "Gerencia General",
       text: "“El trabajo fue excepcional. Su diseño UX/UI permitió mejorar la claridad operativa y reducir tiempos de procesamiento. Profesionalismo total.”",
     },
     {
       logo: "/logos/coopeve.png",
-      name: "Coopeve",
+      name: "",
       role: "Transformación Digital",
       text: "“Gracias al rediseño logramos una experiencia más intuitiva para nuestros usuarios y mayor adopción móvil. Excelente visión y ejecución.”",
     },
