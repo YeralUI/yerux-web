@@ -1,59 +1,69 @@
-export default function Contact() {
-  return (
-    <section id="contact" className="py-36 bg-brand-light">
-      <div className="max-w-4xl mx-auto px-6">
+import { useLanguage } from "../context/LanguageContext";
+import { texts } from "../texts";
 
-        {/* Header */}
+export default function Contact() {
+  const { lang } = useLanguage();
+  const t = texts.contact[lang];
+
+  return (
+    <section id="contact" className="py-32 bg-white">
+      <div className="max-w-5xl mx-auto px-6">
+
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900">
-          Hablemos de tu proyecto
+          {t.title}
         </h2>
-        <p className="text-gray-600 text-center mt-4 mb-16 max-w-2xl mx-auto">
-          Si buscas un diseño profesional para tu app, dashboard o plataforma digital, 
-          completa el formulario y te responderé con una propuesta personalizada.
+
+        <p className="text-gray-600 text-center max-w-xl mx-auto mt-4 mb-14">
+          {t.subtitle}
         </p>
 
-        {/* FORM */}
-        <div className="bg-gray-50 p-10 rounded-3xl shadow-[0_10px_35px_rgba(0,0,0,0.08)] border border-gray-200">
-          <form className="grid gap-6">
+        {/* FORMULARIO */}
+        <form 
+          action="https://formsubmit.co/yeraldinshaik@gmail.com"
+          method="POST"
+          className="grid gap-6 max-w-3xl mx-auto"
+        >
+          {/* Evitar SPAM */}
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value={`${window.location.origin}/#contact`} />
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <input 
-                type="text" 
-                placeholder="Nombre"
-                className="w-full p-4 bg-white border border-gray-300 rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-              />
-
-              <input 
-                type="email" 
-                placeholder="Correo"
-                className="w-full p-4 bg-white border border-gray-300 rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
-              />
-            </div>
-
-            <input 
-              type="text" 
-              placeholder="Empresa o marca (opcional)"
-              className="w-full p-4 bg-white border border-gray-300 rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
+          <div>
+            <label className="block text-gray-700 mb-2">{t.name}</label>
+            <input
+              type="text"
+              name="name"
+              required
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-accent"
             />
+          </div>
 
-            <textarea 
+          <div>
+            <label className="block text-gray-700 mb-2">{t.email}</label>
+            <input
+              type="email"
+              name="email"
+              required
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-accent"
+            />
+          </div>
+
+          <div>
+            <label className="block text-gray-700 mb-2">{t.message}</label>
+            <textarea
+              name="message"
               rows="5"
-              placeholder="Cuéntame sobre tu proyecto"
-              className="w-full p-4 bg-white border border-gray-300 rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition"
+              required
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-accent"
             ></textarea>
+          </div>
 
-            <button
-              className="
-                w-full p-4 bg-blue-600 text-white 
-                text-lg font-semibold rounded-xl 
-                hover:bg-blue-700 transition shadow-lg
-              "
-            >
-              Enviar mensaje
-            </button>
-
-          </form>
-        </div>
+          <button
+            type="submit"
+            className="w-full py-4 bg-brand-accent text-white rounded-xl text-lg font-semibold hover:bg-blue-700 transition"
+          >
+            {t.cta}
+          </button>
+        </form>
 
       </div>
     </section>

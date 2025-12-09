@@ -1,5 +1,10 @@
+import { useLanguage } from "../context/LanguageContext";
+import { texts } from "../texts";
+
 export default function Navbar() {
-  return (
+  const { lang, toggleLang } = useLanguage();
+
+ return (
     <header className="fixed top-0 left-0 w-full z-50 bg-brand-dark/70 backdrop-blur-xl border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
@@ -7,21 +12,32 @@ export default function Navbar() {
           Yer<span className="text-brand-accent">UX</span>
         </a>
 
-        <nav className="hidden md:flex gap-10 text-white/80 font-medium">
-          <a href="#services" className="hover:text-white transition">Servicios</a>
-          <a href="#proyectos" className="hover:text-white transition">Proyectos</a>
-          <a href="#testimonials" className="hover:text-white transition">Clientes</a>
-          <a href="#contact" className="hover:text-white transition">Contacto</a>
-        </nav>
-
-        <a 
-          href="#contact"
-          className="hidden md:inline-block px-6 py-2 bg-brand-accent hover:bg-blue-500 text-white rounded-xl shadow-lg transition-all"
-        >
-          Cotizar proyecto
+       <nav className="flex items-center gap-8">
+        <a href="/" className="hover:opacity-80 transition">
+          {texts.navbar[lang].home}
         </a>
 
+        <a href="/#services" className="hover:opacity-80 transition">
+          {texts.navbar[lang].services}
+        </a>
+
+        <a href="/#proyectos" className="hover:opacity-80 transition">
+          {texts.navbar[lang].projects}
+        </a>
+
+        <a href="/#contact" className="hover:opacity-80 transition">
+          {texts.navbar[lang].contact}
+        </a>
+
+        {/* Switch de idioma – sin tocar color base */}
+        <button
+          onClick={toggleLang}
+          className="ml-4 px-3 py-1 border rounded-lg text-sm bg-transparent hover:bg-white/10 transition"
+        >
+          {lang === "es" ? "EN" : "ES"}
+        </button>
+      </nav>
       </div>
-    </header>
+  </header>
   );
 }
