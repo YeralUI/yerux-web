@@ -53,7 +53,7 @@ export default function Contact() {
               name="message"
               rows="5"
               required
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-accent"
+              className="w-full px-4 py-3 rounded-xl border text-gray-700 border-gray-300 focus:ring-2 focus:ring-brand-accent text-brand-dark2"
             ></textarea>
           </div>
 

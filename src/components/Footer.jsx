@@ -33,7 +33,8 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-4">{t.contact}</h4>
             <ul className="space-y-3 text-white/70">
               <li>Panamá, PA</li>
-              <li>contacto@yerux.com</li>
+              
+              <a href="https://calendly.com/yeraldinespinosa/reunion-30-min">Agendar una reunión</a>
             </ul>
           </div>
         </div>
