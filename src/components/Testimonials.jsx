@@ -31,7 +31,7 @@ export default function Testimonials() {
 
               <div className="h-[2px] w-12 bg-brand-accent mb-6"></div>
 
-              <h4 className="text-xl font-semibold">{item.name}</h4>
+              <h4 className="text-xl font-semibold text-brand-dark2">{item.name}</h4>
               <p className="text-gray-500">{item.role}</p>
             </div>
           ))}

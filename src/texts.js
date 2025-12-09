@@ -148,7 +148,7 @@ testimonials: {
       },
       {
         logo: "/logos/coopeve.png",
-        name: "Coopeve",
+        name: "Sabores del Istmo",
         role: "Transformación Digital",
         text: "“Gracias al rediseño logramos una experiencia más intuitiva y mayor adopción móvil.”",
       },
