@@ -6,7 +6,7 @@ export default function Contact() {
   const t = texts.contact[lang];
 
   return (
-    <section id="contact" className="py-32 bg-white">
+    <section id="contact" className="py-32 bg-brand-light2">
       <div className="max-w-5xl mx-auto px-6">
 
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900">
@@ -21,14 +21,14 @@ export default function Contact() {
         <form 
           action="https://formsubmit.co/yeraldinshaik@gmail.com"
           method="POST"
-          className="grid gap-6 max-w-3xl mx-auto"
+          className="grid gap-6 max-w-3xl mx-auto bg-brand-dark2 p-8 rounded-2xl shadow-lg "
         >
           {/* Evitar SPAM */}
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_next" value={`${window.location.origin}/#contact`} />
 
           <div>
-            <label className="block text-gray-700 mb-2">{t.name}</label>
+            <label className="block text-white mb-2">{t.name}</label>
             <input
               type="text"
               name="name"
@@ -38,7 +38,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <label className="block text-gray-700 mb-2">{t.email}</label>
+            <label className="block text-white mb-2">{t.email}</label>
             <input
               type="email"
               name="email"
@@ -48,7 +48,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <label className="block text-gray-700 mb-2">{t.message}</label>
+            <label className="block text-white mb-2">{t.message}</label>
             <textarea
               name="message"
               rows="5"

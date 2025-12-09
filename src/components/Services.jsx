@@ -22,7 +22,7 @@ export default function Services() {
   const data = texts.services[lang];
 
   return (
-    <section id="services" className="relative py-36 bg-white">
+    <section id="services" className="relative py-36 bg-brand-light">
       <div className="max-w-7xl mx-auto px-6">
 
         <h2 className="text-5xl md:text-6xl font-extrabold text-center text-gray-900">

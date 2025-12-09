@@ -6,10 +6,10 @@ export default function Testimonials() {
   const t = texts.testimonials[lang];
 
   return (
-    <section id="testimonials" className="py-32 bg-white">
+    <section id="testimonials" className="py-32 bg-brand-light">
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-brand-dark text-center mb-4">
           {t.title}
         </h2>
 
@@ -21,7 +21,7 @@ export default function Testimonials() {
 
           {t.list.map((item, i) => (
             <div key={i}>
-              <div className="h-16 mb-2">
+              <div className="h-16 mb-6 bg-brand-dark/95 flex items-center px-4 rounded-full shadow-md w-max">
                 <img src={item.logo} className="h-10 w-auto " />
               </div>
 

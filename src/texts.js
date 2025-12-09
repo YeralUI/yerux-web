@@ -40,7 +40,7 @@ export const texts = {
     {
       icon: "FiLayers",
       title: "Dashboards & Web Apps",
-      desc: "Sistemas empresariales.",
+      desc: "Sistemas empresariales .",
     },
     {
       icon: "FiRefreshCw",
@@ -172,7 +172,7 @@ testimonials: {
         text: "“She has shown an exceptional level of professionalism, dedication, and attention to detail in every project. Her design proposals and vision for enhancing the user experience were key in improving our brand and redesigning our website. She also contributed meaningful improvements to the design of our development projects. We fully recommend her work and expertise in UX/UI projects”",
       },
       {
-        logo: "/logos/coopeve.png",
+        logo: "/logos",
         name: "Coopeve",
         role: "Digital Transformation",
         text: "“The redesign led to a more intuitive experience and increased mobile adoption.”",
@@ -388,5 +388,47 @@ contact: {
     success: "Message sent successfully",
   },
 },
-
-}
+about: {
+      es: {
+      sectionLabel: "Sobre mí",
+      title:
+        "Diseño experiencias digitales claras, modernas y centradas en tus usuarios.",
+      p1: "Soy diseñadora UX/UI especializada en crear experiencias digitales claras, funcionales y modernas. Ayudo a emprendedores, negocios y marcas a mejorar su presencia online a través de diseño estratégico, interfaces intuitivas y procesos visuales que conectan con sus usuarios.",
+      p2: "Tengo experiencia diseñando sitios web, aplicaciones, dashboards, sistemas POS y plataformas de servicio. Mi enfoque combina estética, simplicidad y usabilidad, siempre pensando en cómo cada detalle aporta valor real al proyecto.",
+      p3: "Si necesitas modernizar tu web, mejorar la experiencia de usuario o crear una interfaz profesional para tu producto digital, puedo acompañarte en todo el proceso.",
+      ctaProjects: "Ver proyectos",
+      ctaWhatsapp: "Contacto por WhatsApp",
+      sideTitle: "Servicios UX/UI",
+      sideList: [
+        "Diseño de sitios web y landings",
+        "Interfaces para apps y sistemas",
+        "Rediseño y modernización de productos digitales",
+        "Sistemas de diseño y componentes en Figma",
+      ],
+      sideFooter:
+        "Trabajo de forma remota, con comunicación clara, entregables organizados y enfoque en resultados.",
+      whatsappMessage:
+        "Hola, vi tu portafolio y me gustaría más información sobre tus servicios de UX/UI ✨",
+    },
+en: {
+     sectionLabel: "About me",
+      title: "I design clear, modern, user-focused digital experiences.",
+      p1: "I’m a UX/UI Designer specialized in creating modern, clear and functional digital experiences. I help entrepreneurs, businesses and brands improve their online presence through strategic design, intuitive interfaces and visuals that connect with their users.",
+      p2: "I have experience designing websites, apps, dashboards, POS systems and service platforms. My approach combines aesthetics, simplicity and usability, always focusing on how each detail adds real value to the project.",
+      p3: "If you need to modernize your website, improve the user experience or create a professional interface for your digital product, I can guide you through the entire process.",
+      ctaProjects: "View projects",
+      ctaWhatsapp: "Contact via WhatsApp",
+      sideTitle: "UX/UI Services",
+      sideList: [
+        "Website & landing design",
+        "App & system interface design",
+        "Digital product redesign",
+        "Design systems and components in Figma",
+      ],
+      sideFooter:
+        "I work remotely with clear communication, organized deliverables and a strong focus on results.",
+      whatsappMessage:
+        "Hi! I saw your portfolio and I’d like more information about your UX/UI services ✨",
+    },
+  },
+};

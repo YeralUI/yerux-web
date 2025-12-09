@@ -9,14 +9,14 @@ export default function Proyectos() {
   const links = ["/case-sabores", "/case-ticteams", "/case-"];
 
   return (
-    <section id="proyectos" className="py-36 bg-brand-light">
+    <section id="proyectos" className="py-36 bg-brand-dark2">
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-white">
           {t.title}
         </h2>
 
-        <p className="text-gray-600 text-center max-w-2xl mx-auto mt-4 mb-20">
+        <p className="text-white text-center max-w-2xl mx-auto mt-4 mb-20">
           {t.subtitle}
         </p>
 
@@ -46,10 +46,10 @@ export default function Proyectos() {
               </div>
 
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-gray-900">{p.title}</h3>
+                <h3 className="text-2xl font-semibold text-brand-dark">{p.title}</h3>
                 <p className="text-gray-600 mt-3 leading-relaxed">{p.desc}</p>
 
-                <div className="mt-4 text-blue-600 font-semibold group-hover:underline flex items-center gap-1">
+                <div className="mt-4 text-brand-accent font-semibold group-hover:underline flex items-center gap-1">
                   {t.view_case}
                 </div>
               </div>
@@ -62,3 +62,4 @@ export default function Proyectos() {
     </section>
   );
 }
+// Note: Make sure to adjust the image paths and links as per your project structure.
