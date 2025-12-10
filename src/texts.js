@@ -150,7 +150,7 @@ testimonials: {
         logo: "/logos/coopeve.png",
         name: "Sabores del Istmo",
         role: "Transformación Digital",
-        text: "“Gracias al rediseño logramos una experiencia más intuitiva y mayor adopción móvil.”",
+        text: "“Gracias al diseño logramos una experiencia más intuitiva y mayor adopción móvil.”",
       },
       {
         logo: "/logos/regeneration.png",
@@ -431,4 +431,34 @@ en: {
         "Hi! I saw your portfolio and I’d like more information about your UX/UI services ✨",
     },
   },
+  differentials: {
+  es: {
+    title: "¿Por qué trabajar conmigo?",
+    subtitle:
+      "Aporto claridad, estrategia y diseño profesional para elevar tu producto digital con enfoque en resultados.",
+    list: [
+      "Diseño estratégico enfocado en objetivos reales.",
+      "Experiencia creando webs, apps y sistemas internos.",
+      "Interfaces modernas, limpias y fáciles de usar.",
+      "Entregables organizados y listos para desarrollo.",
+      "Design systems escalables y componentes en Figma.",
+      "Comunicación clara, rápida y profesional.",
+    ],
+  },
+
+  en: {
+    title: "Why work with me?",
+    subtitle:
+      "I bring clarity, strategy and professional UX/UI design to elevate your digital product with a results-driven approach.",
+    list: [
+      "Strategic design aligned with real business goals.",
+      "Experience designing websites, apps and internal systems.",
+      "Modern, clean and easy-to-use interfaces.",
+      "Organized deliverables ready for development.",
+      "Scalable design systems and Figma components.",
+      "Clear, fast and professional communication.",
+    ],
+  },
+},
+
 };

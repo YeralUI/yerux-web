@@ -8,14 +8,17 @@ import Footer from "../components/Footer";
 import WhatsAppFloatingButton from "../components/WhatsAppFloatingButton.jsx";
 import AboutSection from "../components/AboutSection.jsx";
 
+
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
       <Services />
+        
       <Proyectos />
       <AboutSection/>
+
       <Testimonials />
       <Contact />
       <WhatsAppFloatingButton />
