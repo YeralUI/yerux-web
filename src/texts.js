@@ -144,10 +144,10 @@ testimonials: {
         logo: "../ticteams/logo-removebg-preview.png",
         name: "Ticteams",
         role: "Gerencia General",
-        text: "“Ha demostrado un nivel excepcional de profesionalismo, dedicación y atención al detalle en cada proyecto. Sus propuestas de diseño y su visión para mejorar la experiencia de usuario fueron clave para optimizar nuestra marca y renovar nuestro sitio web. Además, aportó mejoras significativas en los diseños de nuestros proyectos de desarrollo. Recomendamos completamente su trabajo y experiencia en proyectos de UX/UI.”",
+        text: "“Yeraldin ha demostrado un nivel excepcional de profesionalismo, dedicación y atención al detalle en cada proyecto. Sus propuestas de diseño y su visión para mejorar la experiencia de usuario fueron clave para optimizar nuestra marca y renovar nuestro sitio web. Además, aportó mejoras significativas en los diseños de nuestros proyectos de desarrollo. Recomendamos completamente su trabajo y experiencia en proyectos de UX/UI.”",
       },
       {
-        logo: "/logos/coopeve.png",
+        logo: "../public/sabores/Original (1).svg",
         name: "Sabores del Istmo",
         role: "Transformación Digital",
         text: "“Gracias al diseño logramos una experiencia más intuitiva y mayor adopción móvil.”",

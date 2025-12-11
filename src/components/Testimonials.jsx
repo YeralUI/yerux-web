@@ -21,7 +21,7 @@ export default function Testimonials() {
 
           {t.list.map((item, i) => (
             <div key={i}>
-              <div className="h-16 mb-6 bg-brand-dark/95 flex items-center px-4 rounded-full shadow-md w-max">
+              <div className="h-16 mb-6 bg-gray-200 flex items-center px-4 rounded-full shadow-md w-max">
                 <img src={item.logo} className="h-10 w-auto " />
               </div>
 
