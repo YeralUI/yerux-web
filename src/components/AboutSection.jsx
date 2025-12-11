@@ -62,7 +62,7 @@ export default function AboutSection() {
 
         {/* Bloque lateral */}
         <div className="w-80 bg-brand-light border border-brand-soft rounded-full p-1 space-y-1 shadow-lg mx-auto">
-            <img className="rounded-full" src="../../public/5.png" alt="" />
+            <img className="rounded-full" src="../../5.png" alt="" />
         </div>
       </div>
     </section>
