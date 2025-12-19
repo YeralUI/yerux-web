@@ -141,20 +141,20 @@ testimonials: {
     subtitle: "Empresas y equipos que confiaron en mi trabajo.",
     list: [
       {
-        logo: "../ticteams/logo-removebg-preview.png",
+        logo: "/ticteams/logo-removebg-preview.png",
         name: "Ticteams",
         role: "Gerencia General",
         text: "“Yeraldin ha demostrado un nivel excepcional de profesionalismo, dedicación y atención al detalle en cada proyecto. Sus propuestas de diseño y su visión para mejorar la experiencia de usuario fueron clave para optimizar nuestra marca y renovar nuestro sitio web. Además, aportó mejoras significativas en los diseños de nuestros proyectos de desarrollo. Recomendamos completamente su trabajo y experiencia en proyectos de UX/UI.”",
       },
       {
-        logo: "../sabores/Original (1).svg",
+        logo: "/sabores/logo-sabores.svg",
         name: "Sabores del Istmo",
         role: "Transformación Digital",
         text: "“Gracias al diseño logramos una experiencia más intuitiva y mayor adopción móvil.”",
       },
       {
-        logo: "/logos/regeneration.png",
-        name: "Regeneration Clinic",
+        logo: "/logos/shaik.png",
+        name: "Shaik Asesores",
         role: "CEO",
         text: "“Una web moderna, clara y funcional. Ahora transmitimos confianza y profesionalismo.”",
       },
@@ -166,7 +166,7 @@ testimonials: {
     subtitle: "Companies and teams that trusted my UX/UI work.",
     list: [
       {
-        logo: "../ticteams/logo-removebg-preview.png",
+        logo: "/ticteams/logo-removebg-preview.png",
         name: "Ticteams",
         role: "General Management",
         text: "“She has shown an exceptional level of professionalism, dedication, and attention to detail in every project. Her design proposals and vision for enhancing the user experience were key in improving our brand and redesigning our website. She also contributed meaningful improvements to the design of our development projects. We fully recommend her work and expertise in UX/UI projects”",

@@ -10,9 +10,9 @@ export default function CaseSabores() {
     "/sabores/login.png",
     "/sabores/abrir.png",
     "/sabores/home.png",
-    "/sabores/pago yappy.png",
-    "/sabores/admin (1).png",
-    "/sabores/PRODUCTOS.png",
+    "/public/sabores/pago-yappy.png",
+        "/sabores/admin.png",
+    "/sabores/productos.png",
   ];
 
   return (
@@ -22,7 +22,7 @@ export default function CaseSabores() {
       {/* HERO */}
       <div className="w-full h-[380px] bg-white overflow-hidden">
         <img
-          src="/sabores/cover sabores del itsmo.png"
+          src="/sabores/cover-sabores.png"
           className="w-full h-full object-cover"
         />
       </div>

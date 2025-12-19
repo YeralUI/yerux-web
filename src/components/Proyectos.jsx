@@ -32,9 +32,9 @@ export default function Proyectos() {
                 <img
                   src={
                     index === 1
-                      ? "/ticteams/ZenBook Duo 14.png"
+                      ? "../ticteams/ZenBook-Duo.png"
                       : index === 0
-                      ? "/sabores/mockuuups-free-ipad-pro-mockup-on-textured-fabric-and-wooden-surface copy.jpeg"
+                      ? "/sabores/mockup.jpeg"
                       : "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1600"
                   }
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
