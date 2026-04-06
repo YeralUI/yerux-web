@@ -25,29 +25,29 @@ export default function Services() {
     <section id="services" className="relative py-36 bg-brand-light">
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-5xl md:text-6xl font-extrabold text-center text-gray-900">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900">
           {lang === "es"
-            ? "Servicios UX/UI para tu producto"
-            : "UX/UI Services for your product"}
+            ? "Cómo trabajo"
+            : "Approach"}
         </h2>
 
-        <p className="text-gray-700 text-center mt-4 mb-20 max-w-2xl mx-auto text-lg">
+        <p className="text-gray-700 text-center mt-4 mb-10 max-w-2xl mx-auto text-lg">
           {lang === "es"
             ? "Diseño moderno, visual y optimizado para aplicaciones y sistemas digitales."
             : "Modern, visual and optimized design for apps and digital systems."}
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-14">
+        <div className="grid md:grid-cols-1 lg:grid-cols-4 gap-6">
           {data.map((srv, i) => (
             <div
               key={i}
-              className="relative p-10 rounded-3xl bg-white shadow-lg hover:shadow-xl border border-white/60 transition-all duration-500 hover:-translate-y-2"
+              className="relative p-6 rounded-3xl bg-white shadow-lg hover:shadow-xl border border-white/60 transition-all duration-500 hover:-translate-y-2"
             >
-              <div className="text-blue-600 mb-6">
+              <div className="text-blue-600 mb-4">
                 {icons[srv.icon]}
               </div>
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 {srv.title}
               </h3>
 
@@ -55,7 +55,7 @@ export default function Services() {
                 {srv.desc}
               </p>
 
-              <div className="w-20 h-[3px] bg-blue-500 mt-6 rounded-full"></div>
+              <div className="w-10 h-[3px] bg-blue-500 mt-6 rounded-full"></div>
             </div>
           ))}
         </div>

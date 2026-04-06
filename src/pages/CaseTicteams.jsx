@@ -22,29 +22,25 @@ export default function CaseTicteams() {
         <img
           src="/ticteams/cover-ticteams.png"
           className="w-full h-full object-cover"
-          alt="Ticteams Cover"
+          alt="TicTeams cover"
         />
       </div>
 
       {/* CONTENIDO */}
       <section className="py-16 max-w-6xl mx-auto px-6 bg-white">
-
         {/* TITULO */}
         <h1 className="text-5xl font-bold text-gray-900 mb-4">{t.title}</h1>
         <p className="text-gray-600 text-xl mb-12">{t.subtitle}</p>
 
         {/* CONTEXTO */}
-        <section className="space-y-4 mb-20">
-          <h2 className="text-3xl font-bold text-gray-900">
-            {t.contexto_title}
-          </h2>
-          <p className="text-gray-700 text-lg">{t.contexto}</p>
+        <section className="space-y-4 mb-16">
+          <h2 className="text-3xl font-bold text-gray-900">{t.contexto_title}</h2>
+          <p className="text-gray-700 text-lg leading-8">{t.contexto}</p>
         </section>
 
         {/* PROBLEMA */}
-        <section className="space-y-4 mb-20">
+        <section className="space-y-4 mb-16">
           <h2 className="text-3xl font-bold text-gray-900">{t.prob_title}</h2>
-
           <ul className="list-disc ml-6 mt-4 space-y-2 text-gray-700 text-lg">
             {t.problema.map((p, i) => (
               <li key={i}>{p}</li>
@@ -53,15 +49,20 @@ export default function CaseTicteams() {
         </section>
 
         {/* OBJETIVO DEL NEGOCIO */}
-        <section className="space-y-4 mb-20">
+        <section className="space-y-4 mb-16">
           <h2 className="text-3xl font-bold text-gray-900">{t.biz_title}</h2>
-          <p className="text-gray-700 text-lg">{t.objetivo}</p>
+          <p className="text-gray-700 text-lg leading-8">{t.objetivo}</p>
+        </section>
+
+        {/* ROL Y ENFOQUE */}
+        <section className="space-y-4 mb-16">
+          <h2 className="text-3xl font-bold text-gray-900">{t.role_title}</h2>
+          <p className="text-gray-700 text-lg leading-8">{t.role}</p>
         </section>
 
         {/* OBJETIVOS UX/UI */}
-        <section className="mb-20">
+        <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">{t.ux_title}</h2>
-
           <ul className="list-disc ml-6 space-y-2 text-gray-700 text-lg">
             {t.ux.map((uxItem, i) => (
               <li key={i}>{uxItem}</li>
@@ -69,78 +70,106 @@ export default function CaseTicteams() {
           </ul>
         </section>
 
-        {/* PROCESO UX/UI */}
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            {t.process_title}
-          </h2>
-
+        {/* PROCESO */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t.process_title}</h2>
           <ol className="list-decimal ml-6 space-y-3 text-gray-700 text-lg">
-            {t.steps.map((step, i) => (
-              <li key={i}>
-                <strong>{step}</strong>
-              </li>
+            {t.process.map((step, i) => (
+              <li key={i}>{step}</li>
             ))}
           </ol>
         </section>
 
-        {/* ANTES Y DESPUES */}
+        {/* DECISIONES DE DISEÑO */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t.decisions_title}</h2>
+          <ul className="list-disc ml-6 space-y-2 text-gray-700 text-lg">
+            {t.decisions.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </section>
+
+        {/* ANTES Y DESPUÉS */}
         <section className="mb-20 space-y-10">
-          <h2 className="text-3xl font-bold text-gray-900">{t.before_after}</h2>
+          <div>
+            <h2 className="text-3xl font-bold text-gray-900">{t.before_after}</h2>
+            <p className="text-gray-700 text-lg mt-3 leading-8">{t.before_after_intro}</p>
+          </div>
 
-          {/* Inicio */}
           <div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">
-              {lang === "es" ? "Página de Inicio" : "Homepage"}
+              {lang === "es" ? "Página de inicio" : "Homepage"}
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
-              <img src="/ticteams/inicio-tic.png" className="rounded-xl shadow" />
-              <img src="/ticteams/inicio-newtic.png" className="rounded-xl shadow" />
+              <img
+                src="/ticteams/inicio-tic.png"
+                className="rounded-xl shadow"
+                alt="Antes página de inicio TicTeams"
+              />
+              <img
+                src="/ticteams/inicio-newtic.png"
+                className="rounded-xl shadow"
+                alt="Después página de inicio TicTeams"
+              />
             </div>
           </div>
 
-          {/* Facturación */}
           <div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">
-              {lang === "es" ? "Facturación Electrónica" : "Electronic Billing"}
+              {lang === "es" ? "Facturación electrónica" : "Electronic Billing"}
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
-              <img src="/ticteams/facturacion-electronica.png" className="rounded-xl shadow" />
-              <img src="/ticteams/facturacion-electronica-new.png" className="rounded-xl shadow" />
+              <img
+                src="/ticteams/facturacion-electronica.png"
+                className="rounded-xl shadow"
+                alt="Antes facturación electrónica"
+              />
+              <img
+                src="/ticteams/facturacion-electronica-new.png"
+                className="rounded-xl shadow"
+                alt="Después facturación electrónica"
+              />
             </div>
           </div>
 
-          {/* Odoo */}
           <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">
-              Odoo ERP
-            </h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Odoo ERP</h3>
             <div className="grid md:grid-cols-2 gap-6">
-              <img src="/ticteams/odoo.png" className="rounded-xl shadow" />
-              <img src="/ticteams/odoo-new.png" className="rounded-xl shadow" />
+              <img
+                src="/ticteams/odoo.png"
+                className="rounded-xl shadow"
+                alt="Antes Odoo ERP"
+              />
+              <img
+                src="/ticteams/odoo-new.png"
+                className="rounded-xl shadow"
+                alt="Después Odoo ERP"
+              />
             </div>
           </div>
         </section>
 
-        {/* GALERIA */}
+        {/* GALERÍA */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            {t.gallery_title}
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t.gallery_title}</h2>
+          <p className="text-gray-700 text-lg mb-6 leading-8">{t.gallery_intro}</p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {gallery.map((img, i) => (
-              <img key={i} src={img} className="rounded-2xl shadow-md" />
+              <img
+                key={i}
+                src={img}
+                className="rounded-2xl shadow-md"
+                alt={`${t.title} screen ${i + 1}`}
+              />
             ))}
           </div>
         </section>
 
         {/* RESULTADOS */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-900 mb-3">
-            {t.results_title}
-          </h2>
-
+          <h2 className="text-3xl font-bold text-gray-900 mb-3">{t.results_title}</h2>
           <ul className="list-disc ml-6 space-y-2 text-gray-700 text-lg">
             {t.results.map((r, i) => (
               <li key={i}>{r}</li>
@@ -148,13 +177,8 @@ export default function CaseTicteams() {
           </ul>
         </section>
 
-        {/* CTA */}
-        <a
-          href="/#contact"
-          className="px-8 py-4 bg-brand-accent text-white text-lg rounded-xl shadow-lg hover:bg-blue-700 transition inline-block"
-        >
-          {t.cta}
-        </a>
+      
+    
       </section>
     </>
   );
