@@ -44,11 +44,11 @@ export default function Hero() {
             UX/UI Designer • Web & App
           </span>
 
-          <h1 className="mt-6 text-5xl md:text-6xl font-extrabold text-white leading-tight">
+          <h1 className="mt-6 text-4xl md:text-5xl font-extrabold text-white leading-tight">
             {t.title}
           </h1>
 
-          <p className="mt-4 text-lg md:text-xl text-white/80 max-w-xl leading-relaxed">
+          <p className="mt-4 text-lg md:text-lg text-white/80 max-w-xl leading-relaxed">
             {t.subtitle}
           </p>
 

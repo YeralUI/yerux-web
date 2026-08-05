@@ -22,7 +22,7 @@ export default function Testimonials() {
           {t.list.map((item, i) => (
             <div key={i}>
               <div className="h-16 mb-6 bg-gray-200 flex items-center px-4 rounded-full shadow-md w-max">
-                <img src={item.logo} className="h-10 w-auto " />
+                <img src={item.logo} className="h-10 w-auto " alt={item.name} />
               </div>
 
               <p className="text-lg italic text-gray-700 mb-2 font-serif">

@@ -22,7 +22,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="bg-brand-light3 text-brand-dark py-16 px-4 sm:px-6 lg:px-8"
+      className="bg-brand-light text-brand-dark py-16 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-6xl mx-auto grid gap-10 md:grid-cols-[1.4fr,1fr] items-center">
         {/* Texto */}
@@ -62,7 +62,7 @@ export default function AboutSection() {
 
         {/* Bloque lateral */}
         <div className="w-80 bg-brand-light border border-brand-soft rounded-full p-1 space-y-1 shadow-lg mx-auto">
-            <img className="rounded-full" src="../../5.png" alt="" />
+            <img className="rounded-full" src="../../public/foto-perfil.png" alt="" />
         </div>
       </div>
     </section>

@@ -10,13 +10,14 @@ export default function Proyectos() {
       link: "/case-sabores",
       image: "/sabores/mockup.jpeg",
     },
-    {
-      link: "/case-ticteams",
-      image: "/ticteams/ZenBook-Duo.png",
-    },
+    
     {
       link: "/case-monix",
       image: "/Mockuuups Free iPhone mockup on a wooden desk in sunlight.jpeg",
+    },
+    {
+      link: "/case-ticteams",
+      image: "/ticteams/ZenBook-Duo.png",
     },
   ];
 

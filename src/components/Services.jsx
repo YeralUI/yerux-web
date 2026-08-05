@@ -25,17 +25,17 @@ export default function Services() {
     <section id="services" className="relative py-36 bg-brand-light">
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900">
-          {lang === "es"
-            ? "Cómo trabajo"
-            : "Approach"}
-        </h2>
+ <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900">
+  {lang === "es"
+    ? "Cómo diseño productos digitales"
+    : "How I design digital products"}
+</h2>
 
-        <p className="text-gray-700 text-center mt-4 mb-10 max-w-2xl mx-auto text-lg">
-          {lang === "es"
-            ? "Diseño moderno, visual y optimizado para aplicaciones y sistemas digitales."
-            : "Modern, visual and optimized design for apps and digital systems."}
-        </p>
+<p className="text-gray-700 text-center mt-4 mb-10 max-w-2xl mx-auto text-lg">
+  {lang === "es"
+    ? "Un enfoque estratégico que conecta usuarios, negocio y tecnología para crear productos digitales claros y escalables."
+    : "A strategic approach connecting users, business and technology to create clear and scalable digital products."}
+</p>
 
         <div className="grid md:grid-cols-1 lg:grid-cols-4 gap-6">
           {data.map((srv, i) => (
